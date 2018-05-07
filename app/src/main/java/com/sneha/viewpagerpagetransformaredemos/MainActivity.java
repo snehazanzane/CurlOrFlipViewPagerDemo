@@ -49,8 +49,11 @@ public class MainActivity extends AppCompatActivity {
         arr.add(new PageModel(R.drawable.img13, "Sun Shine", true));
         arr.add(new PageModel(R.drawable.img14, "Happy to see you", true));
 
-        customPagerAdapter = new CustomPagerAdapter(MainActivity.this, arr);
-        viewPager.setAdapter(customPagerAdapter);
+        //customPagerAdapter = new CustomPagerAdapter(MainActivity.this, arr);
+        //viewPager.setAdapter(customPagerAdapter);
+
+        ViewPagerRecyclerAdapter viewPagerRecyclerAdapter = new ViewPagerRecyclerAdapter(MainActivity.this, arr);
+        viewPager.setAdapter(viewPagerRecyclerAdapter);
 
         btnChangeTransformer.setOnClickListener(new View.OnClickListener() {
             @Override
