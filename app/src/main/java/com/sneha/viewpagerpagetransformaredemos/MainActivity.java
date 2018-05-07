@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         TextView btnFlip = (TextView) view.findViewById(R.id.txtFlipPage_dia);
         TextView btnZoomOut = (TextView) view.findViewById(R.id.txtZoomOutPage_dia);
         TextView btnDepthPage = (TextView) view.findViewById(R.id.txtDepthPage_dia);
-        TextView btnFadePage = (TextView) view.findViewById(R.id.txtFadePage_dia);
+        TextView btnFadePage = (TextView) view.findViewById(R.id.txtFadePage_dia); 
 
         btnCurl.setOnClickListener(new View.OnClickListener() {
             @Override
